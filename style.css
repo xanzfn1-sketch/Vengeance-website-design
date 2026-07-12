@@ -1,0 +1,38 @@
+/* Core Layout Resets & Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #010205;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e1b4b;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+}
+
+/* Ambient Space Engine Matrix */
+body {
+    background: radial-gradient(circle at 50% 50%, #0a0e22 0%, #040610 70%, #010205 100%) !important;
+}
+
+.space-stars {
+    background-image: 
+        radial-gradient(white, rgba(255,255,255,.3) 1.5px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+    background-size: 350px 350px, 200px 200px;
+    background-position: 0 0, 40px 60px;
+    opacity: 0.25;
+}
+
+/* CRITICAL BUGFIX: Hard-enforces dark text color inside white form blocks */
+input, textarea, select {
+    color: #111827 !important;
+    font-weight: 500 !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #6b7280 !important;
+}
