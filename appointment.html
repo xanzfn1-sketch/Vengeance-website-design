@@ -4,4 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intake Channel | Vengeance Web Design</title>
-    <script src="https://cdn.tailwindcss.com"></script
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-100 font-sans antialiased overflow-x-hidden relative bg-[#010205]">
+
+    <!-- Ambient Space Background Grid Layer -->
+    <div class="absolute inset-0 space-stars pointer-events-none z-0"></div>
+    <div class="absolute top-0 right-1/4 bg-purple-600 opacity-20 rounded-full filter blur-[120px] pointer-events-none w-[500px] h-[500px]"></div>
+    <div class="absolute bottom-0 left-1/4 bg-blue-600 opacity-10 rounded-full filter blur-[150px] pointer-events-none w-[600px] h-[600px]"></div>
+
+    <!-- Navigation Hub -->
+    <nav class="sticky top-0 z-50 bg-[#04060f]/70 border-b border-gray-900/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider text-gray-400 hover:text-white transition-all">
+                ← Back to Terminal
+            </a>
+            <span class="text-xl font-black tracking-widest text-white">VENGEANCE</span>
+            <div class="w-20"></div> <!-- Spacer for symmetry -->
+        </div>
+    </nav>
+
+    <!-- Intake Form Wrapper -->
+    <main class="min-h-[calc(100vh-80px)] flex items-center justify-center px-6 py-12 relative z-10">
+        <div class="w-full max-w-xl bg-[#050814]/60 border border-gray-900 p-8 md:p-10 rounded-3xl backdrop-blur-md shadow-2xl">
+            
+            <div class="space-y-2 mb-8 text-center">
+                <h1 class="text-3xl font-black text-white tracking-tight">Initiate Project Pipeline</h1>
+                <p class="text-sm text-gray-400 font-light">Fill out the parameters below to request a secure design build slot.</p>
+            </div>
+
+            <!-- Form Engine (Uses Formspree or your chosen handler) -->
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST" class="space-y-6">
+                
+                <div class="space-y-2">
+                    <label class="block text-xs font-mono tracking-wider uppercase text-gray-400" for="name">Your Name / Agency</label>
+                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe" 
+                        class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="block text-xs font-mono tracking-wider uppercase text-gray-400" for="email">Secure Contact Email</label>
+                    <input type="email" id="email" name="email" required placeholder="name@company.com" 
+                        class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="block text-xs font-mono tracking-wider uppercase text-gray-400" for="tier">System Setup Requirement</label>
+                    <select id="tier" name="tier" required 
+                        class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                        <option value="" disabled selected>Select a build framework...</option>
+                        <option value="single-page">High-Conversion Single Interface</option>
+                        <option value="multi-page">Multi-Tier Directory Showcase</option>
+                        <option value="custom">Custom Dynamic Deployment</option>
+                    </select>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="block text-xs font-mono tracking-wider uppercase text-gray-400" for="spec">Project Matrix Parameters</label>
+                    <textarea id="spec" name="spec" rows="4" required placeholder="Describe your brand goals, required features, and style notes..." 
+                        class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
+                </div>
+
+                <button type="submit" 
+                    class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs tracking-wider uppercase py-4 rounded-xl transition-all shadow-lg shadow-blue-600/20 transform active:scale-[0.98]">
+                    Transmit Secure Request
+                </button>
+            </form>
+
+        </div>
+    </main>
+
+    <!-- Secure Base Output Footer -->
+    <footer class="border-t border-gray-950 bg-[#010205] py-8 text-center font-mono text-[10px] text-gray-600 tracking-widest relative z-10">
+        <p>© 2026 VENGEANCE WEB DESIGN. DATA TUNNEL SECURED.</p>
+    </footer>
+
+</body>
+</html>
