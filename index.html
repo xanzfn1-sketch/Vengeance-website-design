@@ -12,7 +12,8 @@
     <!-- Ambient Space Background Elements -->
     <div class="absolute inset-0 space-stars pointer-events-none z-0"></div>
     <div class="absolute top-0 left-1/4 bg-blue-600 opacity-20 rounded-full filter blur-[120px] pointer-events-none w-[500px] h-[500px]"></div>
-    <div class="absolute top-[40%] right-1/4 bg-purple-600 opacity-15 rounded-full filter blur-[150px] pointer-events-none w-[600px] h-[600px]"></div>
+    <div class="absolute top-[30%] right-1/4 bg-purple-600 opacity-15 rounded-full filter blur-[150px] pointer-events-none w-[600px] h-[600px]"></div>
+    <div class="absolute top-[60%] left-1/3 bg-indigo-600 opacity-10 rounded-full filter blur-[180px] pointer-events-none w-[500px] h-[500px]"></div>
 
     <!-- Top Glow Header Navigation -->
     <nav class="sticky top-0 z-50 bg-[#03040b]/60 border-b border-white/[0.04] backdrop-blur-xl">
@@ -26,7 +27,7 @@
         </div>
     </nav>
 
-    <!-- Master Hero Command Station -->
+    <!-- 1. Master Hero Command Station -->
     <header class="min-h-[calc(100vh-96px)] flex flex-col justify-center px-8 max-w-7xl mx-auto relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full mb-12">
             
@@ -93,10 +94,9 @@
         </div>
     </header>
 
-    <!-- Main Scroll Journey Container -->
     <main class="relative z-10">
         
-        <!-- Advanced GSAP Flip Matrix Section -->
+        <!-- 2. Advanced GSAP Flip Matrix Section -->
         <section id="services" class="py-32 px-8 max-w-7xl mx-auto relative z-10">
             <div class="space-y-4 mb-20 text-center md:text-left">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/5 border border-purple-500/20 text-[10px] font-display uppercase tracking-widest text-purple-400">
@@ -107,71 +107,44 @@
             </div>
 
             <!-- The Flip Matrix Container Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[350px] mb-40 relative items-start" id="flip-container">
-                
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[350px] relative items-start" id="flip-container">
                 <!-- Card 1 -->
                 <div class="flip-card glass-panel p-8 rounded-3xl space-y-4 cursor-pointer group relative overflow-hidden" data-id="card-1">
                     <div class="text-xs font-mono text-blue-500 tracking-widest">SYSTEM // 01</div>
                     <h3 class="text-3xl font-display font-bold text-white tracking-tight">High-Conversion Interfaces</h3>
                     <p class="text-gray-400 text-sm font-light leading-relaxed card-excerpt">Streamlined layout systems crafted for rapid client lead generation and user intent retention.</p>
-                    
-                    <!-- Expanded Area (Hidden initially) -->
                     <div class="expanded-content hidden pt-6 border-t border-white/[0.05] space-y-4">
-                        <p class="text-gray-300 text-sm font-light leading-relaxed">
-                            Every single viewport line is structured to cleanly direct user attention down target conversion funnels. By prioritizing interactive assets over visual static bloat, our pages scale performance metrics seamlessly.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 text-left font-mono text-[11px] pt-2">
-                            <div class="bg-black/40 p-4 rounded-xl border border-white/[0.03]"><span class="text-blue-400">⚡ Lighthouse Score</span><br><span class="text-white font-bold">100 / 100</span></div>
-                            <div class="bg-black/40 p-4 rounded-xl border border-white/[0.03]"><span class="text-green-400">🎯 Primary Focus</span><br><span class="text-white font-bold">Inbound Capture</span></div>
-                        </div>
+                        <p class="text-gray-300 text-sm font-light leading-relaxed">Every single viewport line is structured to cleanly direct user attention down target conversion funnels. By prioritizing interactive assets over visual static bloat, our pages scale performance metrics seamlessly.</p>
                     </div>
-                    <div class="close-btn hidden absolute top-6 right-8 text-[10px] font-mono uppercase tracking-widest text-red-400 border border-red-500/20 px-3 py-1 rounded-full bg-red-500/5 hover:bg-red-500/20 transition-all">Collapse Matrix [-]</div>
                 </div>
-
                 <!-- Card 2 -->
                 <div class="flip-card glass-panel p-8 rounded-3xl space-y-4 cursor-pointer group relative overflow-hidden" data-id="card-2">
                     <div class="text-xs font-mono text-purple-500 tracking-widest">SYSTEM // 02</div>
                     <h3 class="text-3xl font-display font-bold text-white tracking-tight">Multi-Tier Directories</h3>
                     <p class="text-gray-400 text-sm font-light leading-relaxed card-excerpt">Deep content frameworks structured to hold expansive operational portfolios and indices.</p>
-                    
-                    <!-- Expanded Area (Hidden initially) -->
                     <div class="expanded-content hidden pt-6 border-t border-white/[0.05] space-y-4">
-                        <p class="text-gray-300 text-sm font-light leading-relaxed">
-                            Engineered for dense architectural requirements. Utilizes asynchronous indexing strategies to load secondary and tertiary page layers instantly without forcing client browser resets.
-                        </p>
-                        <div class="grid grid-cols-2 gap-4 text-left font-mono text-[11px] pt-2">
-                            <div class="bg-black/40 p-4 rounded-xl border border-white/[0.03]"><span class="text-purple-400">📦 Database Sync</span><br><span class="text-white font-bold">Realtime Async</span></div>
-                            <div class="bg-black/40 p-4 rounded-xl border border-white/[0.03]"><span class="text-green-400">🛠️ Architecture</span><br><span class="text-white font-bold">Single-Page Map</span></div>
-                        </div>
-                    </div>
-                    <div class="close-btn hidden absolute top-6 right-8 text-[10px] font-mono uppercase tracking-widest text-red-400 border border-red-500/20 px-3 py-1 rounded-full bg-red-500/5 hover:bg-red-500/20 transition-all">Collapse Matrix [-]</div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- THE SCROLL STREAM: Captures scroll triggers to shoot info out -->
-        <section class="relative min-h-[250vh] px-8" id="trigger-stream-zone">
-            <!-- Background Live Code Matrix Overlay -->
-            <div id="matrix-code-bg" class="absolute inset-0 font-mono text-[11px] text-blue-500/10 pointer-events-none select-none overflow-hidden px-12 leading-relaxed"></div>
-            
-            <!-- Centered Tracker Frame -->
-            <div class="sticky top-1/3 max-w-xl mx-auto pointer-events-none z-20">
-                <div class="glass-panel p-8 rounded-3xl text-center border-blue-500/20 shadow-[0_0_50px_rgba(59,130,246,0.1)]">
-                    <div class="text-[10px] font-mono text-blue-400 uppercase tracking-widest mb-2 animate-pulse">⚡ AUTOMATED QUEUE STREAM</div>
-                    <div class="text-2xl font-display font-bold text-white mb-4">Compiling Network Architecture...</div>
-                    <!-- Micro Progress Bar -->
-                    <div class="w-full bg-black/60 rounded-full h-2 border border-white/[0.05] p-[1px]">
-                        <div id="stream-progress" class="bg-blue-500 h-1 rounded-full transition-all duration-100" style="width: 0%"></div>
+                        <p class="text-gray-300 text-sm font-light leading-relaxed">Engineered for dense architectural requirements. Utilizes asynchronous indexing strategies to load secondary and tertiary page layers instantly without forcing client browser resets.</p>
                     </div>
                 </div>
             </div>
-
-            <!-- Dynamic Floating Spawn Containment Zone -->
-            <div id="popout-container" class="absolute inset-0 pointer-events-none"></div>
         </section>
 
-        <!-- Project Funding Tracker Metric Panel -->
+        <!-- 3. New About Us Section -->
+        <section id="about" class="py-32 px-8 max-w-5xl mx-auto relative z-10 about-section opacity-0 translate-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 space-y-4">
+                    <div class="text-[10px] font-mono text-indigo-400 uppercase tracking-widest">// MISSION PROTOCOL</div>
+                    <h2 class="text-4xl font-display font-bold text-white">Who Is Behind Vengeance?</h2>
+                </div>
+                <div class="md:col-span-7 bg-white/[0.01] border border-white/[0.04] p-8 rounded-3xl backdrop-blur-md">
+                    <p class="text-gray-400 font-light leading-relaxed text-base">
+                        Vengeance isn't your average agency running standard web templates. We look at the web as code art. Everything we deliver is hand-crafted, fully customized, optimized for maximum speed, and structured to put your competition completely out of the race.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Project Funding Tracker Metric Panel -->
         <section class="py-32 px-8 max-w-4xl mx-auto relative z-10 info-panel">
             <div class="glass-panel p-8 md:p-12 rounded-3xl space-y-8">
                 <div class="p-6 bg-black/30 rounded-2xl border border-white/[0.03] space-y-3">
@@ -192,9 +165,29 @@
             </div>
         </section>
 
+        <!-- 5. THE SCROLL STREAM: Chaos kicks in AFTER the funding metric section -->
+        <section class="relative min-h-[200vh] px-8" id="trigger-stream-zone">
+            <!-- Background Live Code Matrix Overlay -->
+            <div id="matrix-code-bg" class="absolute inset-0 font-mono text-[11px] text-blue-500/10 pointer-events-none select-none overflow-hidden px-12 leading-relaxed"></div>
+            
+            <!-- Centered Tracker Frame (Fixed positioning handled inside code stream zone) -->
+            <div class="sticky top-1/3 max-w-xl mx-auto pointer-events-none z-20">
+                <div class="glass-panel p-8 rounded-3xl text-center border-blue-500/20 shadow-[0_0_50px_rgba(59,130,246,0.1)] bg-[#03040b]/90">
+                    <div class="text-[10px] font-mono text-blue-400 uppercase tracking-widest mb-2 animate-pulse">⚡ OVERLOAD STREAM LOGGING</div>
+                    <div class="text-2xl font-display font-bold text-white mb-4">Compiling Network Architecture...</div>
+                    <div class="w-full bg-black/60 rounded-full h-2 border border-white/[0.05] p-[1px]">
+                        <div id="stream-progress" class="bg-blue-500 h-1 rounded-full transition-all duration-100" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Floating Spawn Containment Zone -->
+            <div id="popout-container" class="absolute inset-0 pointer-events-none"></div>
+        </section>
+
     </main>
 
-    <!-- THE VOID OVERLAY: Fullscreen Cinematic End Blocker -->
+    <!-- 6. THE VOID OVERLAY: Fullscreen Cinematic End Blocker -->
     <div id="the-void" class="fixed inset-0 bg-black z-50 flex flex-col items-center justify-center pointer-events-none opacity-0 select-none">
         <div class="text-center space-y-8 px-6">
             <h1 id="void-brand" class="text-7xl md:text-9xl font-display font-black tracking-[0.2em] text-white opacity-0 select-none">VENGEANCE</h1>
