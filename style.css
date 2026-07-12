@@ -1,38 +1,55 @@
-/* Core Layout Resets & Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: #010205;
-}
-::-webkit-scrollbar-thumb {
-    background: #1e1b4b;
-    border-radius: 9999px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #3b82f6;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+    --bg-dark: #03040b;
+    --card-bg: rgba(6, 10, 26, 0.45);
+    --border-color: rgba(255, 255, 255, 0.04);
+    --neon-blue: #3b82f6;
+    --neon-purple: #a855f7;
 }
 
-/* Ambient Space Engine Matrix */
 body {
-    background: radial-gradient(circle at 50% 50%, #0a0e22 0%, #040610 70%, #010205 100%) !important;
-}
-
-.space-stars {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-dark) !important;
     background-image: 
-        radial-gradient(white, rgba(255,255,255,.3) 1.5px, transparent 30px),
-        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
-    background-size: 350px 350px, 200px 200px;
-    background-position: 0 0, 40px 60px;
-    opacity: 0.25;
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
+    overflow-x: hidden;
 }
 
-/* CRITICAL BUGFIX: Hard-enforces dark text color inside white form blocks */
+.font-display {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Premium Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: #1e1b4b; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--neon-blue); }
+
+/* Glassmorphism Card Skins */
+.glass-panel {
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.glass-panel:hover {
+    border-color: rgba(59, 130, 246, 0.2);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.05);
+}
+
+/* Enforce Form Input Readability */
 input, textarea, select {
-    color: #111827 !important;
-    font-weight: 500 !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+    backdrop-filter: blur(8px);
 }
-
-input::placeholder, textarea::placeholder {
-    color: #6b7280 !important;
+input:focus, textarea:focus, select:focus {
+    border-color: var(--neon-blue) !important;
+    outline: none;
 }
